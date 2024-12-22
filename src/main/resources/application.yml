@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/xmas_project
+    username: root
+    password: xxxx
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.MariaDBDialect
+  sql:
+    init:
+      mode: always
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+
